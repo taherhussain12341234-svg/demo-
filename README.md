@@ -1,33 +1,41 @@
+# Galactic Field Guide: Relics of the Moon & Mars
 
-**Then replace the four `YOUR-USERNAME` and `YOUR-REPO` placeholders** with your actual URLs.
+**NASA Space Apps Challenge 2026**
 
-Upload with the same workflow as everything else:
-1. Repo → **Add file** → **Create new file**
-2. Name: `README.md`
-3. Paste the content
-4. Commit
+> "Some explorers never came home. Here is their story."
 
-Five minutes and your repo suddenly looks polished and complete.
+An interactive web experience that turns seven real spacecraft left on the Moon and Mars into first-person narrators. Instead of reading facts about the Apollo 15 buggy, kids hear it say: *"I was folded flat when they strapped me to the side of the rocket. I didn't know what a Moon was yet."*
 
----
+## 🔭 Live Demo
 
-## 2. GitHub Pages demo vs `demo.html` demo — which one to submit
+- **Website:** https://YOUR-USERNAME.github.io/YOUR-REPO/?cinema=1
+- **7-slide overview:** https://YOUR-USERNAME.github.io/YOUR-REPO/demo.html
 
-**You have *two* valid demos now.** Both will work for the submission. Here's the difference:
+## ✨ What it does
 
-| Option | URL | What judges see |
+- **Cinematic intro** — starfield, moon emergence, and a story-opening line
+- **Seven first-person relics** — each with Start / End / Your Turn chapters
+- **Narrated tour** — 2-minute guided walkthrough
+- **3D Lab** — turn, tap, and explore NASA-inspired models
+- **Radar Map** — see where each relic sits on the Moon and Mars
+- **Live NASA photos** — search the NASA Image and Video Library in-app
+- **Badges + XP** — "Space Cadet," "Test Pilot," "Space Legend"
+
+## 🛰️ The seven relics
+
+| Relic | Where | When |
 |---|---|---|
-| **A. Live site** | `https://you.github.io/repo/` | Your actual website — cinematic intro plays, they click through 7 relics, explore 3D Lab |
-| **B. Slide deck** | `https://you.github.io/repo/demo.html` | A 7-slide presentation telling the story of the project |
+| Moon Buggy (LRV) | Hadley, Moon | 1971 |
+| Surveyor 3 | Ocean of Storms, Moon | 1967 |
+| Intrepid (Apollo 12 LM) | Ocean of Storms, Moon | 1969 |
+| Eagle (Apollo 11 LM) | Tranquility Base, Moon | 1969 |
+| Perseverance | Jezero Crater, Mars | 2021 |
+| Ingenuity | Jezero Crater, Mars | 2021 |
+| Three Forks Sample Depot | Jezero Crater, Mars | 2023 |
 
-**Submit the live site (Option A).** Here's why:
+## 🚀 Running locally
 
-- **It *is* the demo** — the site itself demonstrates everything you built. The cinematic intro, the first-person stories, the tour, the 3D Lab — all right there, fully interactive.
-- **Judges click once and are inside the experience.** No explanation needed. The product speaks for itself.
-- **The cinematic intro doubles as the "hook."** Landing on your site is exactly like landing on the slide deck's Slide 1 — same starfield, same "Some explorers never came home." Only difference: on the live site, the visitor *enters the story*, rather than being told about it.
-- **Fits the 30-second rule naturally.** A judge clicking your URL will see something compelling within the first 3 seconds. They don't need to sit through 7 slides to "get it."
-- **The `demo.html` is a backup.** If you're worried the site won't load for them (network, offline, whatever), the slide deck is a lower-bandwidth alternative.
-
-## So what do you actually submit?
-
-**One URL.** This one:
+```bash
+# Serve the folder — audio and photos need HTTP, not file://
+python3 -m http.server 8000
+# Then open http://localhost:8000
